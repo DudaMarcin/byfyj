@@ -1,0 +1,41 @@
+$primary-color:  #844625;
+$secondary-color:#ddc391;
+
+.mat-sidenav-container{
+        
+    .mat-sidenav{
+        background-color: $primary-color;
+
+        a {
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        a:hover{
+            background-color: $secondary-color;
+        }
+    
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .nav-desktop{
+        width: 20%;
+    }
+
+    .nav-mobile{
+        width: 40%;
+    }
+
+    .mat-toolbar{
+        width: 100%;
+        background-color: $primary-color;
+
+        span{
+            flex: 1 1 auto;
+            text-align: center;
+        }
+    }
+}

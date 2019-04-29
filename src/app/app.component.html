@@ -1,21 +1,36 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav   
+  [ngClass]="(isHandset$ | async) ? 'nav-mobile' : 'nav-desktop' "
+  fixedInViewport="true"
+  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  [mode]="(isHandset$ | async) ? 'over' : 'side'"
+  [opened]="!(isHandset$ | async)">
+    <mat-nav-list>
+      <img class="logoMenu" src="assets/logoByfyj.png" />
+      <a mat-list-item href="#">Byfyj</a>
+      <a mat-list-item href="#">Menu</a>
+      <a mat-list-item href="#">Kontakt</a>
+      <a mat-list-item href="#">Sklep</a>
+      <a mat-list-item href="#">Oferty</a>
+      <mat-list-item *ngFor="let item of list " >
+        <mat-icon matListIcon>mail</mat-icon>
+        <h3 matLine>Tekst</h3>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content role="main">
+    <mat-toolbar color="primary" class="mat-elevation-z6" *ngIf="(isHandset$ | async)">
+      <button mat-button
+      aria-label="Toggle sidenav"
+      mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Byfyj Babci Gosi</span>
+    </mat-toolbar>
+    <app-homepage></app-homepage>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
 
 <router-outlet></router-outlet>
