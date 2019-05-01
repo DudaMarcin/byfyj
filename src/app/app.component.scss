@@ -3,12 +3,15 @@ $secondary-color:#ddc391;
 
 .mat-sidenav-container{
         
+    
     .mat-sidenav{
         background-color: $primary-color;
 
         a {
             -webkit-transition-duration: 1s;
             transition-duration: 1s;
+            font-family: 'brannboll';
+            font-size: 25px;
         }
 
         a:hover{
