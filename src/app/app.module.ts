@@ -17,6 +17,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 
+//angular-layout
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+//services
+import {ResponsiveService} from './responsive.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,9 +39,12 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     MatButtonModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+
+    //angular-layout
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [ResponsiveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

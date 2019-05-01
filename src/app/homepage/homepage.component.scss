@@ -7,6 +7,43 @@ mat-grid-list{
             width: 80%;
             height: 80%;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            mat-card-content{
+                text-align: center;
+                .title-desktop{
+                    font-family: 'brannboll';
+                    font-size: 5vw;
+                }
+
+                .title-mobile{
+                    font-family: 'brannboll';
+                    font-size: 10vw;
+                }
+
+                
+                .slogan{
+                    font-family: 'brannboll';
+                    font-size: 3vw;
+                }
+
+
+
+                    .img-desktop{
+                        width: 20vw; 
+                        border: 0px solid rgb(234, 234, 234);
+                    }
+
+                    .img-mobile{
+                        width: 70vw; 
+                        border: 0px solid rgb(234, 234, 234);
+                    }
+
+                
+            }
+
 
             .p-h1{
                 font-size: 5vw;
@@ -19,6 +56,6 @@ mat-grid-list{
     }
 
     .katra-catering{
-
+        background-color: yellow;
     }
 }

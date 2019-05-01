@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+/* import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map } from 'rxjs/operators'; */
+import {ResponsiveService} from './responsive.service';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,17 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'ByfyjWeb';
-
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  isPhone;
+/*   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
-    );
+    ); */
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(/* private breakpointObserver: BreakpointObserver */
+    private _responsive : ResponsiveService
+    ) {}
+
+  ngOnInit(){
+    this.isPhone = this._responsive.isHandset$;
+  }
 }

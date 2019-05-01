@@ -1,11 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-sidenav-container fullscreen>
   <mat-sidenav #sidenav   
-  [ngClass]="(isHandset$ | async) ? 'nav-mobile' : 'nav-desktop' "
+  [ngClass]="(isPhone | async) ? 'nav-mobile' : 'nav-desktop' "
   fixedInViewport="true"
-  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-  [mode]="(isHandset$ | async) ? 'over' : 'side'"
-  [opened]="!(isHandset$ | async)">
+  [attr.role]="(isPhone | async) ? 'dialog' : 'navigation'"
+  [mode]="(isPhone| async) ? 'over' : 'side'"
+  [opened]="!(isPhone | async)">
     <mat-nav-list>
       <img class="logoMenu" src="assets/logoByfyj.png" />
       <a mat-list-item href="#">Byfyj</a>
@@ -20,7 +20,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content role="main">
-    <mat-toolbar color="primary" class="mat-elevation-z6" *ngIf="(isHandset$ | async)">
+    <mat-toolbar color="primary" class="mat-elevation-z6" *ngIf="(isPhone| async)">
       <button mat-button
       aria-label="Toggle sidenav"
       mat-icon-button (click)="sidenav.toggle()">

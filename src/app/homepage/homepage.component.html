@@ -1,25 +1,24 @@
 <mat-grid-list cols="3" rowHeight="1:1">
   <mat-grid-tile colspan="3" class="HelloPhoto">
     <mat-card>
-      <mat-card-header>
-          <mat-card-title>Pyszna śląska kuchnia</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>       
-          <img style="width: 335px; border: 0px solid rgb(234, 234, 234);" alt="image" src="http://www.balbooa.com/demo-content/gridbox/themes/tasty/devider-white.png">
+      <mat-card-content>
+          <span [ngClass]="(isPhone | async) ? 'title-mobile' : 'title-desktop' " >Pyszna śląska kuchnia</span> 
+          <br>      
+          <img alt="image" [ngClass]="(isPhone | async ) ? 'img-mobile': 'img-desktop' " src="http://www.balbooa.com/demo-content/gridbox/themes/tasty/devider-white.png">
           <br>
-          Z najlepszych babcinnych przepisów
-          <!-- <img style="width: 335px; border: 0px solid rgb(234, 234, 234);" alt="image" src="http://www.balbooa.com/demo-content/gridbox/themes/tasty/devider-white.png"> -->  
+          <span *ngIf="!(isPhone | async)" class="slogan">Z najlepszych babcinnych przepisów</span>
+          
       </mat-card-content>
     </mat-card>
 
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" class="katra-catering">
+  <mat-grid-tile rowspan="1" [colspan]="(isPhone | async) ? '3' : '1' " class="katra-catering">
     <mat-card>
       <mat-card-header>
         <mat-card-title>title</mat-card-title>
         <mat-card-subtitle>sub-header</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-lg-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR827Gv6dUxJigD1-g3fuCkuUF9lMsDQLrH4-lc4oOAwj1svGYm" />
+      <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR827Gv6dUxJigD1-g3fuCkuUF9lMsDQLrH4-lc4oOAwj1svGYm" />
       <mat-card-content>
         content
       </mat-card-content>
