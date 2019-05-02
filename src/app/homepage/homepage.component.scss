@@ -1,7 +1,9 @@
 mat-grid-list{
 
     .HelloPhoto{
-        background-image: url("https://ocdn.eu/pulscms-transforms/1/I7qk9kpTURBXy9jNjEzOGNjMTVjZTAzZmVmZDI4NzEyOWU2MmVjZGI2OS5qcGeTlQMATs0H0M0EZZMFzQMUzQG8lQfZMi9wdWxzY21zL01EQV8vMjMzN2M5ZmQ2YjkzMWVlNmNiMGQyM2RjYmEyNThhOWQucG5nAMIAgaEwAQ");
+        border-radius: 0 0 3px 3px;
+        background-image: url("https://www.balbooa.com/demo-content/gridbox/themes/tasty/bg-home-wine.jpg");
+        background-size: 100%;
         mat-card{
             background-color:  rgba(132, 70, 37, 0.88);
             width: 80%;
@@ -16,30 +18,29 @@ mat-grid-list{
                 .title-desktop{
                     font-family: 'brannboll';
                     font-size: 5vw;
+                    color: #ddc391;
                 }
 
                 .title-mobile{
                     font-family: 'brannboll';
                     font-size: 10vw;
+                    color: #ddc391;
                 }
 
-                
                 .slogan{
                     font-family: 'brannboll';
                     font-size: 3vw;
                 }
 
+                .img-desktop{
+                    width: 20vw; 
+                    border: 0px solid rgb(234, 234, 234);
+                }
 
-
-                    .img-desktop{
-                        width: 20vw; 
-                        border: 0px solid rgb(234, 234, 234);
-                    }
-
-                    .img-mobile{
-                        width: 70vw; 
-                        border: 0px solid rgb(234, 234, 234);
-                    }
+                .img-mobile{
+                    width: 70vw; 
+                    border: 0px solid rgb(234, 234, 234);
+                }
 
                 
             }
@@ -56,6 +57,189 @@ mat-grid-list{
     }
 
     .katra-catering{
-        background-color: yellow;
+        mat-card{
+            background-color:  rgba(132, 70, 37, 0.9);
+            width: 85%;
+            height: 90%;
+
+            mat-card-header{
+                height: 15%;
+                mat-card-title{
+                    font-family: 'brannboll';
+                    font-size: 4vw;
+                }
+            }
+
+            mat-card-content{
+                font-family: 'caladea';
+                font-size: 1.3vw;
+                text-align: center;
+            }
+            
+            .karta-zdjecie{
+                border-radius: 8px;
+                width: 100%;
+            }
+
+
+            .img-desktop{
+                width: 100%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            mat-card-actions{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                button {
+                    height: 10%;
+                    width: 70%;
+                    font-family: 'brannboll';
+                    font-size: 2vw;
+                    border: 4px solid  #ddc391;
+                    //border-color: #ddc391;
+                    background-color: #ddc391;
+                    margin-bottom: 20px;
+                    position: absolute;
+                    bottom:   0;
+                    -webkit-transition-duration: 0.4s; /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                button:hover{
+                    border: 4px solid  #ddc391;
+                    background-color:rgb(138, 73, 39);
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+
+    .karta-imprezy{
+        mat-card{
+            background-color:  rgba(132, 70, 37, 0.9);
+            width: 85%;
+            height: 90%;
+
+            mat-card-header{
+                height: 15%;
+                mat-card-title{
+                    font-family: 'brannboll';
+                    font-size: 4vw;
+                    color: #ddc391;
+                }
+            }
+
+            mat-card-content{
+                font-family: 'caladea';
+                font-size: 1.3vw;
+                text-align: center;
+            }
+            
+            .karta-zdjecie{
+                border-radius: 8px;
+                width: 100%;
+            }
+
+
+            .img-desktop{
+                width: 100%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            mat-card-actions{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                button {
+                    height: 10%;
+                    width: 70%;
+                    font-family: 'brannboll';
+                    font-size: 2vw;
+                    border: 4px solid  #ddc391;
+                    //border-color: #ddc391;
+                    background-color: #ddc391;
+                    margin-bottom: 20px;
+                    position: absolute;
+                    bottom:   0;
+                    -webkit-transition-duration: 0.4s; /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                button:hover{
+                    border: 4px solid  #ddc391;
+                    background-color:rgb(138, 73, 39);
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+
+    .katra-firmy{
+        mat-card{
+            background-color:  rgba(132, 70, 37, 0.9);
+            width: 85%;
+            height: 90%;
+
+            mat-card-header{
+                height: 15%;
+                mat-card-title{
+                    font-family: 'brannboll';
+                    font-size: 4vw;
+                }
+            }
+
+            mat-card-content{
+                font-family: 'caladea';
+                font-size: 1.3vw;
+                text-align: center;
+            }
+            
+            .karta-zdjecie{
+                border-radius: 8px;
+                width: 100%;
+            }
+
+
+            .img-desktop{
+                width: 100%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            mat-card-actions{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                button {
+                    height: 10%;
+                    width: 70%;
+                    font-family: 'brannboll';
+                    font-size: 2vw;
+                    border: 4px solid  #ddc391;
+                    //border-color: #ddc391;
+                    background-color: #ddc391;
+                    margin-bottom: 20px;
+                    position: absolute;
+                    bottom:   0;
+                    -webkit-transition-duration: 0.4s; /* Safari */
+                    transition-duration: 0.4s;
+                }
+
+                button:hover{
+                    border: 4px solid  #ddc391;
+                    background-color:rgb(138, 73, 39);
+                    border-radius: 40px;
+                }
+            }
+        }
     }
 }
