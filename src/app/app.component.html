@@ -8,8 +8,8 @@
   [opened]="!(isPhone | async)">
     <mat-nav-list>
       <img class="logoMenu" src="assets/logoByfyj.png" />
-      <a mat-list-item href="#">Byfyj</a>
-      <a mat-list-item href="#">Menu</a>
+      <a mat-list-item routerLink="/home" routerLinkActive="active">Byfyj</a>
+      <a routerLink="/menu" routerLinkActive="active" mat-list-item >Menu</a>
       <a mat-list-item href="#">Kontakt</a>
       <a mat-list-item href="#">Sklep</a>
       <a mat-list-item href="#">Oferty</a>
@@ -27,9 +27,9 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Byfyj Babci Gosi</span>
-    </mat-toolbar>
-    <app-homepage></app-homepage>
+    </mat-toolbar> 
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

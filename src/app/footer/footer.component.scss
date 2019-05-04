@@ -1,0 +1,32 @@
+mat-grid-list{
+    border-radius: 4px 4px 0px 0px;
+    background-color: rgba(132, 70, 37, 0.8);
+    border: 2px solid rgba(132, 70, 37, 0.8);
+    mat-card{
+        height: 80%;
+        width: 80%;
+        background-color: #ddc391;
+        mat-grid-list{
+            background-color: #ddc391;
+            border: none;
+            .title-desktop{
+                font-family: 'brannboll';
+                font-size: 2vw;
+            }
+            .title-mobile{
+                font-family: 'brannboll';
+                font-size: 4vh;
+            }
+
+            .content-desktop{
+                font-family: 'caladea';
+                font-size: 1.3vw;
+            }
+            .content-mobile{
+                font-family: 'caladea';
+                font-size: 2vh;
+            }
+        }
+
+    }
+}

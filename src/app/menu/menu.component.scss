@@ -1,0 +1,32 @@
+mat-card{
+    background-color: #ddc391;
+    margin: 10px 10px 10px 10px;
+    mat-grid-list{
+        .menu-naglowek{
+            border: 4px solid black;
+            mat-card{
+                margin: none;
+                text-align: center;
+                transition: none !important;
+                box-shadow: none !important;
+                .menu{
+                    font-family: 'brannboll';
+                    font-size: 4vw;
+                    color: rgba(132, 70, 37, 1);
+                }
+                p{
+                    font-family: 'caladea';
+                    font-size: 1.5vw;
+                    color: rgba(132, 70, 37, 1);
+                }
+                //display: flex;
+                //justify-content: center;
+                //align-items: center;
+            }
+        }
+        .menu-kolumna{
+            border: 4px solid black;
+        }
+    }
+}
+
