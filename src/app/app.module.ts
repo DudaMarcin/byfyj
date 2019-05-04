@@ -27,6 +27,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HomeDialogComponent } from './home-dialog/home-dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MenuComponent } from './menu/menu.component';
     HomepageComponent,
     HomeDialogComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    KontaktComponent
   ],
   imports: [
     BrowserModule,
