@@ -20,7 +20,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 //services
-import {ResponsiveService} from './responsive.service';
+import {ResponsiveService} from './services/responsive.service';
 
 //Moje Componenty
 import { HomepageComponent } from './homepage/homepage.component';

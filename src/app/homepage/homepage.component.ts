@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ResponsiveService} from '../responsive.service';
+import {ResponsiveService} from '../services/responsive.service';
 import {MatDialog, MatDialogRef} from '@angular/material';
 import { HomeDialogComponent } from '../home-dialog/home-dialog.component';
 

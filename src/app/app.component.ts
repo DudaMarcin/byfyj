@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 /* import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators'; */
-import {ResponsiveService} from './responsive.service';
+import {ResponsiveService} from './services/responsive.service';
 
 @Component({
   selector: 'app-root',

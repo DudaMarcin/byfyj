@@ -26,6 +26,17 @@ mat-card{
         }
         .menu-kolumna{
             border: 4px solid black;
+            p{
+                font-family: 'caladea';
+                .potrawa{
+                    font-size: 1.5vw;
+                    color: rgba(132, 70, 37, 1);
+                }
+                .cena{
+                    font-size: 1vw;
+                    color: rgba(132, 70, 37, 0.5);
+                }
+            }
         }
     }
 }
