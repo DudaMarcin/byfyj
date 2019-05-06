@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ResponsiveService} from '../services/responsive.service';
 
 @Component({
   selector: 'app-kontakt',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kontakt.component.scss']
 })
 export class KontaktComponent implements OnInit {
-
-  constructor() { }
+  isPhone;
+  constructor(private _responsive: ResponsiveService) { }
 
   ngOnInit() {
+    this.isPhone = this._responsive.isHandset$;
   }
 
 }

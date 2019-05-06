@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
+//Być może?
+import { DecimalPipe } from '@angular/common';
+import { DatePipe } from '@angular/common';
+
 //Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -20,7 +25,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 //services
-import {ResponsiveService} from './services/responsive.service';
+import { ResponsiveService } from './services/responsive.service';
+import { PotrawyService } from './services/potrawy.service';
+
 
 //Moje Componenty
 import { HomepageComponent } from './homepage/homepage.component';
@@ -41,6 +48,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     //Material
     BrowserAnimationsModule,
     MatSidenavModule,
@@ -57,7 +65,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
     FlexLayoutModule
   ],
   entryComponents: [HomeDialogComponent],
-  providers: [ResponsiveService],
+  providers: [ResponsiveService, PotrawyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

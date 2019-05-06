@@ -8,7 +8,7 @@ import {ResponsiveService} from '../services/responsive.service';
 })
 export class FooterComponent implements OnInit {
   isPhone;
-  constructor(private _responsive: ResponsiveService,) { }
+  constructor(private _responsive: ResponsiveService) { }
 
   ngOnInit() {
     this.isPhone = this._responsive.isHandset$;

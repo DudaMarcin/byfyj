@@ -13,14 +13,16 @@
         </mat-grid-tile>
         <mat-grid-tile class="menu-kolumna" colspan="1" rowspan="4">
           <mat-card>
-              <p>
-                <span class="potrawa">Bigos</span>
+            {{tekscik}}
+              <p *ngFor="let potrawyInfo of potrawyData" >
+                {{tekscik}}
+                <span class="potrawa">{{potrawyInfo.nameOfFood}}</span>
                 <br>
-                <span class="cena">16,50/op</span>
+                <span class="cena">{{potrawyInfo.priceOfFood}} pln/{{potrawyInfo.unitOfFood}}</span>
               </p>
+              <!--<p>Bigos</p>
               <p>Bigos</p>
-              <p>Bigos</p>
-              <p>Bigos</p>
+              <p>Bigos</p>-->
           </mat-card>
         </mat-grid-tile>
         <mat-grid-tile colspan="1" rowspan="4">Zupy</mat-grid-tile>
